@@ -2,7 +2,9 @@ name: Build Chiaki with Visual Studio
 
 on:
   workflow_dispatch:
-
+  push:
+    tags:
+      - "Release*"
 jobs:
   build-win_x64: # only win_x64 so far :)
     name: Build Chiaki win_x64 (VC)
