@@ -1,9 +1,7 @@
 name: Build Release
 
 on:
-  push:
-      tags:
-        - "Release*"
+  workflow_dispatch:
 
 jobs:
   call-build-win_x64-vc:
